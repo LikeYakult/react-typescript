@@ -1,5 +1,7 @@
 import * as React from "react";
+import * as PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
+import { NavProps } from "./Main";
 
 interface LabelledValue {
   label: string;
@@ -34,20 +36,17 @@ const printLabel = (object: LabelledValue): void => {
 };
 
 const prefixCls = "typeJs-nav";
-export default class Nav extends React.Component {
-  public menus: any[] = [
-    {name: "合约", to: "/"},
-    {name: "指南", to: "/"},
-    {name: "API", to: "/"},
-    {name: "客服", to: "/"},
-  ];
+export default class Nav extends React.Component<NavProps, {}> {
+  static propTypes = {
+    navRouter: PropTypes.array
+  };
 
   constructor(props: any) {
     super(props);
     this.state = {};
   }
 
-  public renderMenus = (): React.ReactNode => this.menus.map((item, index) =>
+  public renderMenus = (): React.ReactNode => this.props.navRouter.map((item, index) =>
     <div className={"item"} key={index}>
       <Link to={item.to}>
         {item.name}
