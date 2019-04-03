@@ -6,8 +6,10 @@ export interface NavProps {
   navRouter: any[];
 }
 
+interface Props extends NavProps {}
+
 const prefixCls = "typeJs-main";
-class Main extends React.Component<NavProps, {}> {
+class Main extends React.Component<Props, {}> {
   public render() {
     return (
       <div className={prefixCls}>
