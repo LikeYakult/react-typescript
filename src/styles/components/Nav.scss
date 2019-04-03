@@ -1,0 +1,32 @@
+$cls: '#{$prefixCls}-nav';
+
+'.#{$cls}' {
+  height: 50px;
+  background: $primary-color;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  .left {
+    display: flex;
+    align-items: center;
+    .logo {
+      margin-right: 70px;
+      img {
+        height: 24px;
+      }
+    }
+    .menus {
+      display: flex;
+      .item {
+        margin-right: 48px;
+        a {
+          font-size: $font-size-base;
+          color: $white-color;
+        }
+      }
+    }
+  }
+  .right {
+    margin-left: auto;
+  }
+}

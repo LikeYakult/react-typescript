@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+$prefixCls:           "typeJs";
+
+$font-weight-small:       500;
+$font-weight-600:         600;
+
+$background-color:        #F1F3F7;
+$black-info-color:        #252A44;
+$black-color:             #0E283F;
+$primary-color:           #2665E9;
+$hover-color:             #5D90FF;
+$gray-color:              #919CA4;
+$green-color:             #3DB57A;
+$red-color:               #E75A5B;
+$white-color:             #ffffff;
+$light-blue-color:        #A6C2F4;
+$deep-blue-color:         #215DDB;
+$light-white-color:       #FBFBFB;
+$light-gary-color:        #FDFDFD;
+$light-white-color:       #FCFDFF;
+$light-gary-color02:      rgba(0, 0, 0, 0.02);
+$light-gary-color06:      rgba(0, 0, 0, 0.06);
+$table-color25:           rgba(14, 40, 63, 0.25);
+$table-color50:           rgba(14, 40, 63, 0.5);
+$table-color:             rgba(14, 40, 63, 0.65);
+
+$shadow-small-color:      #C1C9DB;
+
+$font-size-small:         12px;
+$font-size-base:          14px;
+$font-size-large:         16px;
+$font-size-big:           20px;
+$font-size-bigger:        22px;
+$font-size-over:          40px;
+
+$btn-base:                #3676FF;
+$btn-light-blue:          #5D90FF;
+$btn-green-hover:         #67D09C;
+$btn-red-hover:           #ED7475;
+$btn-light-gray:          #EDF0F4;
+$btn-small-blue:          #E6EEFF;
+$btn-small-white:         #F6F9FF;
+
+$gray-border-color:       #D0D6DA;
+$blue-border-color:       #306EF2;
+$blue-meta-color:         #1F5BDD;
+$dark-blur-border:        #B5CDFF;
+$light-gary-border:       #E9E9E9;
+$light-blue-border:       rgba(90, 141, 250, 0.45);
+$light-white-border:      rgba(251, 251, 251, 0.55);
+$light-gary-border45:     rgba(210, 213, 223, 0.45);
+$light-gary-border16:     rgba(145, 156, 164, 0.16);
+
+
+$icon-gary-color:         #CDD8E0;
+
+@import "./components/Nav";
